@@ -1,0 +1,22 @@
+{
+  "name": "videoplatform",
+  "version": "1.0.0",
+  "description": "video platform",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youngswell/videoPlatform.git"
+  },
+  "author": "yanglang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youngswell/videoPlatform/issues"
+  },
+  "homepage": "https://github.com/youngswell/videoPlatform#readme",
+  "dependencies": {
+    "uni-app-axios": "^2.3.3"
+  }
+}
