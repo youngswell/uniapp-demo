@@ -17,12 +17,14 @@ export default {
 	},
 	onLoad() {
 		// this.loadData()
+		console.log(this.$store)
+		console.log(this.$api)
 	},
 	methods: {
 		loadData() {
-			// this.$api.login().then(res => {
-			// 	console.log(res)
-			// })
+			this.$api.user.login().then(res => {
+				console.log(res)
+			})
 		}
 	}
 }
