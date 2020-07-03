@@ -1,6 +1,7 @@
 <template>
 	<view class="page index">
 		<text>index</text>
+		<view>{{ userInfo }}</view>
 	</view>
 </template>
 
@@ -12,18 +13,23 @@ export default {
 	},
 	data() {
 		return {
-			
+			userInfo: ""
 		}
 	},
 	onLoad() {
-		// this.loadData()
+		this.loadData()
 		console.log(this.$store)
 		console.log(this.$api)
 	},
 	methods: {
 		loadData() {
-			this.$api.user.login().then(res => {
+			this.$api.user.login({
+				user_login: "admin",
+				password: "gyjlykj123456",
+				code: "1231"
+			}).then(res => {
 				console.log(res)
+				this.userInfo = JSON.stringify(res)
 			})
 		}
 	}
